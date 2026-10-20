@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO Primary Meta Tags -->
+  <title>Event Gallery | Stage Recitals & Performances - Aarohi Sangeetalaya</title>
+  <meta name="title" content="Event Gallery | Stage Recitals & Performances - Aarohi Sangeetalaya">
+  <meta name="description" content="Explore photos from annual day celebrations, stage recitals, Kathak dance performances, tabla baithaks, vocal concerts, and art exhibitions at Aarohi Sangeetalaya.">
+  <meta name="keywords" content="music school photo gallery, kathak dance photos, annual day celebrations, classical music concert photos, tabla baithak images">
+  <meta name="author" content="Aarohi Sangeetalaya">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.aarohisangeetalaya.com/gallery.html">
+
+  <!-- Open Graph / WhatsApp Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.aarohisangeetalaya.com/gallery.html">
+  <meta property="og:title" content="Event & Performance Gallery | Aarohi Sangeetalaya">
+  <meta property="og:description" content="Moments of grace, rhythm, and artistic pride. Explore our stage recitals and student achievements.">
+  <meta property="og:image" content="images/annual_event.jpg">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- JSON-LD ImageGallery Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Aarohi Sangeetalaya Event and Performance Gallery",
+    "description": "Photographs of annual day celebrations, classical music baithaks, Kathak dance recitals, and fine art exhibitions.",
+    "url": "https://www.aarohisangeetalaya.com/gallery.html"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-badge">
+        <span class="pulse-dot"></span>
+        <span>Admissions Open for New Batches (2026-27) • Affiliated with Prayag Sangeet Samiti</span>
+      </div>
+      <div class="top-bar-links">
+        <a href="tel:+919876543210">📞 +91 98765 43210</a>
+        <a href="https://wa.me/919999999999?text=Hi%20Aarohi%20Sangeetalaya,%20I%20am%20interested%20in%20a%20Free%20Trial%20Class!" target="_blank" rel="noopener">💬 WhatsApp Chat</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Nav -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Aarohi Sangeetalaya Home">
+        <img src="images/logo.png" alt="Aarohi Sangeetalaya Emblem">
+        <div class="brand-info">
+          <span class="brand-name">Aarohi Sangeetalaya</span>
+          <span class="brand-tagline">Music, Dance & Fine Arts Institute</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav id="nav">
+        <div class="nav-drawer-header">
+          <span class="nav-drawer-title">Aarohi Sangeetalaya</span>
+          <button class="nav-drawer-close" aria-label="Close navigation menu">✕</button>
+        </div>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="courses.html" class="nav-link">Courses</a></li>
+          <li><a href="gallery.html" class="nav-link active">Event Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta-group">
+        <button class="btn btn-primary btn-sm open-enquiry-modal" data-course="General Enquiry">
+          Book Free Demo
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="inner-page-header">
+    <div class="container">
+      <span class="badge badge-gold" style="margin-bottom: 12px;">Moments of Pride</span>
+      <h1>Photo & Event Gallery 📸✨</h1>
+      <p>A glimpse into our stage concerts, annual day celebrations, classroom workshops, and student achievements.</p>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section>
+    <div class="container">
+      
+      <!-- Controls Bar: Filter Buttons + Upload Event Photos Trigger -->
+      <div class="gallery-controls-bar">
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All Photos</button>
+          <button class="filter-btn" data-filter="events">Stage & Annual Day</button>
+          <button class="filter-btn" data-filter="kathak">Kathak Dance</button>
+          <button class="filter-btn" data-filter="tabla">Tabla & Percussion</button>
+          <button class="filter-btn" data-filter="vocal">Vocal & Harmonium</button>
+          <button class="filter-btn" data-filter="arts">Fine Arts Studio</button>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+          <span id="adminStatusBadge" style="display: none; font-size: 0.78rem; background: rgba(37, 211, 102, 0.15); color: #15803d; border: 1px solid rgba(37, 211, 102, 0.4); padding: 5px 12px; border-radius: var(--radius-pill); font-weight: 700; align-items: center; gap: 6px;">
+            ✅ Admin Mode Active • <button id="btnLockAdmin" style="background: none; border: none; color: #b91c1c; text-decoration: underline; cursor: pointer; font-weight: 700;">Lock</button>
+          </span>
+          <!-- Photo Uploader Button for Owner with Admin PIN -->
+          <button class="btn btn-primary btn-sm" id="btnOpenUploadModal">
+            🔒 Admin: Add Event Photos
+          </button>
+        </div>
+      </div>
+
+      <!-- Owner Security & Uncut Full Photo Notice -->
+      <div style="background: rgba(221, 168, 59, 0.12); border: 1px dashed var(--accent-gold); border-radius: var(--radius-sm); padding: 14px 22px; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+        <div style="font-size: 0.88rem; color: var(--primary-dark); line-height: 1.5;">
+          ✨ <strong>100% Uncut Photos:</strong> Every event photo now displays in its full natural height—<strong>heads, faces, mudras, and costumes are completely visible with zero cropping!</strong> Only you (Admin PIN: <code>1212</code>) can add or delete event photos.
+        </div>
+        <span class="badge badge-gold" style="font-size: 0.75rem;">100% Uncut & Protected</span>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-masonry-grid" id="galleryGrid">
+        
+        <!-- 1. Annual Day Celebration -->
+        <div class="gallery-card" data-category="events">
+          <img src="images/annual_event.jpg" alt="Aarohi Sangeetalaya Annual Day Stage Celebration and Award Distribution" loading="lazy">
+          <div class="gallery-card-overlay">
+            <h4>Annual Day Celebration & Award Ceremony</h4>
+            <span>Stage Events & Annual Day</span>
+          </div>
+        </div>
+
+        <!-- 2. Kathak Solo & Group Performance -->
+        <div class="gallery-card" data-category="kathak">
+          <img src="images/hero-bg.jpg" alt="Kathak Dance Classical Mudra and Stage Recital" loading="lazy">
+          <div class="gallery-card-overlay">
+            <h4>Kathak Sandhya - Classical Stage Recital</h4>
+            <span>Kathak Classical Dance</span>
+          </div>
+        </div>
+
+        <!-- 3. Classical Vocal Baithak -->
+        <div class="gallery-card" data-category="vocal">
+          <img src="images/vocal.jpg" alt="Hindustani Classical Vocal Baithak with Guruji and Students" loading="lazy">
+          <div class="gallery-card-overlay">
+            <h4>Hindustani Vocal Baithak & Swara Sadhana</h4>
+            <span>Vocal & Harmonium</span>
+          </div>
+        </div>
+
+        <!-- 4. Fine Arts Classroom -->
+        <div class="gallery-card" data-category="arts">
+          <img src="images/fine_arts.jpg" alt="Student Canvas Painting and Creative Fine Arts Studio" loading="lazy">
+          <div class="gallery-card-overlay">
+            <h4>Fine Arts Exhibition & Canvas Workshop</h4>
+            <span>Fine Arts & Drawing</span>
+          </div>
+        </div>
+
+        <!-- 5. Tabla Concert Performance -->
+        <div class="gallery-card" data-category="tabla">
+          <img src="images/tabla.jpg" alt="Tabla Solo and Riyaz Session" loading="lazy">
+          <div class="gallery-card-overlay">
+            <h4>Tabla Teental Solo & Taal Demonstrations</h4>
+            <span>Tabla & Percussion</span>
+          </div>
+        </div>
+
+        <!-- 6. Harmonium Lehra -->
+        <div class="gallery-card" data-category="vocal">
+          <img src="images/harmonium.jpg" alt="Harmonium Classes and Classical Swara Practice" loading="lazy">
+          <div class="gallery-card-overlay">
+            <h4>Harmonium Riyaz & Raga Compositions</h4>
+            <span>Vocal & Harmonium</span>
+          </div>
+        </div>
+
+        <!-- 7. Student Kathak Recital 1 -->
+        <div class="gallery-card" data-category="kathak">
+          <img src="images/1_img.jpeg" alt="Kathak Classical Student Performing" loading="lazy">
+          <div class="gallery-card-overlay">
+            <h4>Kathak Tarana Performance</h4>
+            <span>Kathak Classical Dance</span>
+          </div>
+        </div>
+
+        <!-- 8. Student Kathak Recital 2 -->
+        <div class="gallery-card" data-category="kathak">
+          <img src="images/2_img.jpeg" alt="Annual Cultural Festival Dance Recital" loading="lazy">
+          <div class="gallery-card-overlay">
+            <h4>Annual Cultural Festival Recital</h4>
+            <span>Kathak Classical Dance</span>
+          </div>
+        </div>
+
+        <!-- 9. Stage Performance 3 -->
+        <div class="gallery-card" data-category="events">
+          <img src="images/3_img.jpeg" alt="Students Performing at Music and Dance Festival" loading="lazy">
+          <div class="gallery-card-overlay">
+            <h4>Inter-Academy Classical Dance Showcase</h4>
+            <span>Stage Events & Annual Day</span>
+          </div>
+        </div>
+
+        <!-- 10. Student Certificate & Workshop 4 -->
+        <div class="gallery-card" data-category="events">
+          <img src="images/4_img.jpeg" alt="Prayag Sangeet Samiti Examination Ceremony" loading="lazy">
+          <div class="gallery-card-overlay">
+            <h4>Board Examination Certificate Distribution</h4>
+            <span>Stage Events & Annual Day</span>
+          </div>
+        </div>
+
+        <!-- 11. Kathak Choreography -->
+        <div class="gallery-card" data-category="kathak">
+          <img src="images/kathak.jpg" alt="Kathak Dance Expressions and Footwork" loading="lazy">
+          <div class="gallery-card-overlay">
+            <h4>Jaipur Gharana Tatkar Practice</h4>
+            <span>Kathak Classical Dance</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Preview Lightbox">
+    <div class="lightbox-content-box">
+      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close Lightbox">✕</button>
+      <button class="lightbox-nav-btn lightbox-nav-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+      <button class="lightbox-nav-btn lightbox-nav-next" id="lightboxNext" aria-label="Next image">›</button>
+      
+      <img id="lightboxImg" src="" alt="Full view performance photo">
+      <div class="lightbox-caption-bar">
+        <h3 id="lightboxTitle">Event Title</h3>
+        <p id="lightboxCategory">Category</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin PIN Verification Modal for Photo Upload Security -->
+  <div class="modal-overlay" id="adminPinModal" role="dialog" aria-modal="true" aria-labelledby="adminPinTitle">
+    <div class="modal-dialog" style="max-width: 440px; text-align: center;">
+      <button class="modal-close-icon" aria-label="Close PIN modal">✕</button>
+      
+      <div class="modal-header" style="margin-bottom: 20px;">
+        <span class="badge badge-maroon" style="margin-bottom: 8px;">Academy Owner Access</span>
+        <h3 id="adminPinTitle">🔒 Enter Admin PIN</h3>
+        <p>Please enter your 4-digit PIN to manage and upload event photos.</p>
+      </div>
+
+      <form id="adminPinForm">
+        <div class="form-group">
+          <input type="password" id="adminPinInput" class="form-control" placeholder="••••" maxlength="8" style="text-align: center; font-size: 1.6rem; letter-spacing: 0.35em;" required>
+          <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-top: 8px;">
+            Default PIN: <strong>1212</strong> (Can be customized in js/main.js)
+          </span>
+        </div>
+
+        <div class="modal-actions" style="margin-top: 20px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Unlock Admin Mode
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Easy Event Photo Upload Modal for User / Admin -->
+  <div class="modal-overlay" id="uploadModal" role="dialog" aria-modal="true" aria-labelledby="uploadModalTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-icon" aria-label="Close upload modal">✕</button>
+      
+      <div class="modal-header">
+        <span class="badge badge-gold" style="margin-bottom: 8px;">Easy Photo Management</span>
+        <h3 id="uploadModalTitle">📸 Add Event Photos</h3>
+        <p>Choose any photo from your phone or computer to instantly showcase it in the gallery.</p>
+      </div>
+
+      <form id="uploadPhotoForm">
+        <div class="form-group">
+          <label for="photoFileInput">Select Photo from Computer / Phone *</label>
+          <input type="file" id="photoFileInput" class="form-control" accept="image/*" required>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 16px;">
+          <img id="uploadPhotoPreview" src="" alt="Photo Preview" style="max-height: 180px; margin: 0 auto; border-radius: 8px; display: none; border: 1px solid var(--accent-gold);">
+        </div>
+
+        <div class="form-group">
+          <label for="photoTitleInput">Event Title / Description *</label>
+          <input type="text" id="photoTitleInput" class="form-control" placeholder="e.g. Annual Day 2026, Kathak Workshop, Diwali Recital" required>
+        </div>
+
+        <div class="form-group">
+          <label for="photoCategoryInput">Discipline / Event Category</label>
+          <select id="photoCategoryInput" class="form-control">
+            <option value="events">Stage Events & Annual Day</option>
+            <option value="kathak">Kathak Classical Dance</option>
+            <option value="tabla">Tabla & Percussion</option>
+            <option value="vocal">Vocal & Harmonium</option>
+            <option value="arts">Fine Arts & Drawing</option>
+          </select>
+        </div>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-primary" style="flex: 1;">
+            ✨ Add to Gallery Now
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Trial Class CTA Banner -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-card">
+        <div class="cta-banner-text">
+          <span class="badge badge-gold" style="margin-bottom: 12px;">Be on Our Stage</span>
+          <h2>Want to Perform in Our Next Annual Concert?</h2>
+          <p>Join Aarohi Sangeetalaya today. We prepare every student for live auditorium performances and prestigious board certifications.</p>
+        </div>
+        <div class="cta-banner-actions">
+          <button class="btn btn-primary btn-book-demo" data-course="General Enquiry">
+            🎯 Book Free Trial Class
+          </button>
+          <a href="contact.html" class="btn btn-outline-gold">
+            📍 Visit Our Studio
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <img src="images/logo.png" alt="Aarohi Sangeetalaya Logo">
+            <div class="brand-info">
+              <span class="brand-name" style="color: #FFF;">Aarohi Sangeetalaya</span>
+              <span class="brand-tagline" style="color: var(--accent-gold-light);">Classical Arts Institute</span>
+            </div>
+          </div>
+          <p>
+            Dedicated centre of Indian artistic learning, nurturing creativity, discipline, and confidence through Hindustani classical music, Kathak dance, and fine arts since 2012.
+          </p>
+          <div class="footer-affiliation-badge">
+            <h5>Affiliated with Prayag Sangeet Samiti</h5>
+            <p>Conducting recognized certificate, diploma & degree examinations.</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">→ Home</a></li>
+            <li><a href="about.html">→ About the Institute & Founder</a></li>
+            <li><a href="courses.html">→ All Courses & Syllabus</a></li>
+            <li><a href="gallery.html">→ Event & Stage Photo Gallery</a></li>
+            <li><a href="contact.html">→ Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html#kathak">→ Kathak Classical Dance</a></li>
+            <li><a href="courses.html#tabla">→ Tabla Percussion</a></li>
+            <li><a href="courses.html#harmonium">→ Harmonium & Keyboard</a></li>
+            <li><a href="courses.html#vocal">→ Hindustani Classical Vocal</a></li>
+            <li><a href="courses.html#arts">→ Fine Arts & Sketching</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect With Us</h4>
+          <p>📍 <strong>Campus:</strong> Music, Dance & Fine Arts Centre</p>
+          <p>📞 <strong>Phone:</strong> <a href="tel:+919876543210" style="color:#FFF;">+91 98765 43210</a></p>
+          <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/919999999999" target="_blank" rel="noopener" style="color:var(--accent-gold-light);">+91 99999 99999</a></p>
+          <p>⏰ <strong>Studio Hours:</strong> Mon - Sat: 9:00 AM – 8:00 PM | Sun: 9:00 AM – 2:00 PM</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aarohi Sangeetalaya – Music, Dance & Fine Arts Institute. All Rights Reserved.</p>
+        <p>Affiliated to Prayag Sangeet Samiti, Allahabad.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <div class="floating-actions-container">
+    <a href="https://wa.me/919999999999?text=Hi%20Aarohi%20Sangeetalaya,%20I%20am%20interested%20in%20taking%20a%20Free%20Trial%20Class!" 
+       class="floating-whatsapp-btn" 
+       target="_blank" 
+       rel="noopener"
+       aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.697.072-2.128-.519-1.523-.63-2.518-2.179-2.594-2.28-.076-.102-.625-.831-.625-1.585 0-.753.393-1.124.534-1.277.142-.153.311-.192.415-.192.103 0 .208.002.298.006.096.004.225-.036.352.268.13.312.443 1.077.481 1.155.039.078.065.169.013.273-.052.104-.078.169-.156.26-.078.091-.163.203-.233.272-.078.077-.16.16-.068.318.091.157.406.67 87 1.084.597.533 1.101.698 1.258.776.156.078.26.117.299.182.039.065.039.377-.105.782z"/>
+      </svg>
+      <span>Enquire on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Global Booking Modal -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-icon" aria-label="Close booking modal">✕</button>
+      <div class="modal-header">
+        <span class="badge badge-gold" style="margin-bottom: 8px;">Admission & Trial</span>
+        <h3 id="modalTitle">Book Your Free Trial Class 🎶</h3>
+        <p>Experience our Gurus' teaching firsthand with no fees and no commitment.</p>
+      </div>
+
+      <form id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="modalStudentName">Student / Parent Name *</label>
+            <input type="text" id="modalStudentName" class="form-control" placeholder="Enter Full Name" required>
+          </div>
+          <div class="form-group">
+            <label for="modalStudentPhone">WhatsApp / Phone No. *</label>
+            <input type="tel" id="modalStudentPhone" class="form-control" placeholder="e.g. 9876543210" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookingCourseSelect">Discipline of Interest *</label>
+            <select id="bookingCourseSelect" class="form-control" required>
+              <option value="Kathak Dance">Kathak Classical Dance</option>
+              <option value="Tabla Percussion">Tabla Percussion</option>
+              <option value="Harmonium & Keyboard">Harmonium & Keyboard</option>
+              <option value="Hindustani Classical Vocal">Hindustani Classical Vocal</option>
+              <option value="Fine Arts & Sketching">Fine Arts & Drawing</option>
+              <option value="General Enquiry">General Admission Counselling</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="modalPreferredTiming">Preferred Batch Timing</label>
+            <select id="modalPreferredTiming" class="form-control">
+              <option value="Weekday Evenings (4 PM - 8 PM)">Weekday Evenings (4 PM - 8 PM)</option>
+              <option value="Weekend Mornings (Sat/Sun)">Weekend Mornings (Sat/Sun)</option>
+              <option value="Flexible / Online 1-on-1">Flexible / Online 1-on-1</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="modalNotes">Any specific message or question? (Optional)</label>
+          <textarea id="modalNotes" class="form-control" rows="3" placeholder="Tell us about student's age, prior experience, or preferred days..."></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="btnModalWhatsapp" class="btn btn-primary" style="flex: 1;">
+            💬 Submit via WhatsApp
+          </button>
+          <button type="submit" class="btn btn-maroon" style="flex: 1;">
+            Register Trial Class
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

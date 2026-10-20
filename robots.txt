@@ -1,0 +1,6 @@
+# robots.txt for Aarohi Sangeetalaya
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://www.aarohisangeetalaya.com/sitemap.xml
